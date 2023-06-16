@@ -1,6 +1,6 @@
 
 # Intro
-采用BART结构，使用Swin Transformer做图像encoder，ChatGLM做文本decoder，将文本和图像表征做cross-attention
+采用BART结构，使用Swin Transformer做图像encoder，ChatGLM做文本decoder，将文本和图像表征做cross-attention。模型可以完成OCR，文档内容理解，文档信息抽取等文档智能任务。参考[`Donut`]([https://huggingface.co/datasets/naver-clova-ix/synthdog-zh](https://github.com/clovaai/donut))
 
 
 ## Dataset
