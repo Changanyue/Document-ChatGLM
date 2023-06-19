@@ -11,13 +11,37 @@
 
 
 
-## 训练swin+gpt2
+## 训练
 以OCR的方式进行预训练，让模型输出图片对应文字
+
+
+
+
+### Train
+
 ```bash
+CUDA_VISIBLE_DEVICES="1" python my_models/swin_gpt2/train.py --config my_models/config/train_synthdog_gpt2.yaml --exp_version "donut_gpt2_pretrain_exp_0"
 
-CUDA_VISIBLE_DEVICES="0" python src/swin_gpt2/train.py --config src/config/train_synthdog_gpt2.yaml --exp_version "donut_gpt2_pretrain_exp_0"
+```
+
+### Test
+
+```bash
+CUDA_VISIBLE_DEVICES="0" python my_models/swin_gpt2/test.py --config my_models/config/infer_synthdog_gpt2.yaml 
+
+```
 
 
+## swin_chatglm
+
+```bash
+CUDA_VISIBLE_DEVICES="0" python my_models/swin_chatglm/train.py --config my_models/config/train_synthdog_gpt2.yaml --exp_version "donut_chatglm_pretrain_exp_0"
+
+
+
+
+
+```
 
 
 
